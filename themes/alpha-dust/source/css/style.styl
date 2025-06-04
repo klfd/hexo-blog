@@ -1,0 +1,73 @@
+// Alpha Dust Theme Styles
+// Main stylesheet for the theme
+
+// Variables
+$primary-color = #2c3e50
+$secondary-color = #3498db
+$text-color = #333
+$bg-color = #fff
+
+// Base styles
+body
+  font-family: 'Helvetica Neue', Arial, sans-serif
+  color: $text-color
+  background-color: $bg-color
+  line-height: 1.6
+
+// Header styles
+header
+  background: $primary-color
+  color: white
+  padding: 1rem 0
+
+// Navigation
+nav
+  ul
+    list-style: none
+    padding: 0
+    margin: 0
+  
+  li
+    display: inline-block
+    margin-right: 1rem
+  
+  a
+    color: white
+    text-decoration: none
+    
+    &:hover
+      color: $secondary-color
+
+// Content styles
+.container
+  max-width: 1200px
+  margin: 0 auto
+  padding: 0 1rem
+
+// Article styles
+article
+  margin-bottom: 2rem
+  
+  h1, h2, h3, h4, h5, h6
+    color: $primary-color
+    margin-bottom: 0.5rem
+  
+  p
+    margin-bottom: 1rem
+
+// Footer
+footer
+  background: $primary-color
+  color: white
+  text-align: center
+  padding: 2rem 0
+  margin-top: 3rem
+
+// Responsive design
+@media (max-width: 768px)
+  .container
+    padding: 0 0.5rem
+  
+  nav li
+    display: block
+    margin-bottom: 0.5rem
