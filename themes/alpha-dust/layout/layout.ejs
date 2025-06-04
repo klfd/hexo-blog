@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- partial('_partial/head') %>
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+      <div class="container">
+        <div class="col-md-9">
+          <%- body %>
+        </div>
+        <aside id="sidebar" class="col-md-3">
+          <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
+        </aside>
+      </div>
+    </div>
+    <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+  </div>
+  <%- partial('_partial/after-footer') %>
+</body>
+</html>
